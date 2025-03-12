@@ -1,0 +1,84 @@
+.adminPage {
+    width: 100%;
+    height: 100%;
+    background-color: #FCF4EE;
+
+    flex: 1;
+
+    display: flex;
+
+    font-family: 'Paperlogy';
+
+    .adminMenuBar {
+        box-sizing: border-box;
+        width: 18%;
+        height: 100%;
+        background-color: #98755E;
+        padding: 30px 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .chairImg {
+            width: 40%;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .menus {
+            border: solid 2px white;
+            width: 100%;
+            border-radius: 20px;
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 20%;
+            box-sizing: border-box;
+
+            a {
+                width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 10px;
+                text-decoration: none;
+                border-bottom: solid 2px white;
+                color: white;
+
+                div {
+                    width: 90%;
+                    padding: 5px;
+                    text-align: center;
+                    border-radius: 15px;
+                    font-weight: bold;
+
+                    font-size: 1.1em;
+                }
+            }
+
+            .selectedMenu {
+                >div {
+                    background-color: #FCF4EE;
+                    color: #98755E;
+                }
+            }
+        }
+    }
+
+    .wholeContentBox {
+        width: 82%;
+        box-sizing: border-box;
+
+        padding: 30px 4%;
+
+        display: flex;
+        flex-direction: column;
+    }
+}

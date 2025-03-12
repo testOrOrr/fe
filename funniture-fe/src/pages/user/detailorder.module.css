@@ -1,0 +1,294 @@
+/* mypageContent 내부에 전체적인 margin 을 주기위한 컨테이너 */
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 3% 5%;
+    box-sizing: border-box;
+}
+.orderContainer > h3 {
+    display: flex;
+    color: #7F5539;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.orderHr {
+    width: 99.8%;
+    margin: 0;
+}
+
+/* 주문번호&주문일 */
+.orderHeader {
+    border: 2px solid #7F5539;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 7px;
+    margin: 2px 0px;
+}
+.orderHeader > div {
+    display: flex;
+}
+.orderHeader > div > div:first-child {
+    color: #7F5539;
+    margin-right: 5px;
+}
+.orderHeader > div > div {
+    font-weight: 600;
+}
+.orderHeader > div:first-child {
+    color: gray;
+    font-size: 0.8em;
+}
+
+/* 주문상품 */
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.productInfo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.productInfo > div:first-child {
+    margin: 7px 20px;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    width: 50%;
+    gap: 10px;
+}
+
+.productInfo> div:nth-child(1) > div:nth-child(1)  {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #2C7E3E;
+}
+.productInfo > div > div:nth-child(2),
+.productInfo > div:nth-child(2)> div {
+    align-items: center;
+    background-color: #B08968;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white;
+    cursor: pointer;
+}
+.productInfo > div:nth-child(2) {
+    margin: 7px 20px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.orderInfoContainer {
+    margin: 7px 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100%-20px);
+    height: calc(100%-7px);
+    gap: 5px;
+}
+
+.orderInfoContainer > div:nth-child(1) {
+    display: flex;
+    font-size: 1.3em;
+    font-weight: 600;
+} 
+
+.orderInfoContainer > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.orderInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+}
+
+.orderImg {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.orderInfo > div {
+    margin: 2px 0px;
+    width: 100%;
+    display: flex;  /* 내부 요소도 flex 적용 */
+    flex-direction: row; /* 가로 정렬 */
+    
+}
+
+.orderInfoContainer > div:nth-child(3) {
+    display: flex;
+    background-color: rgb(230, 226, 226);
+    margin: 0% 20% 0% 0%;
+    padding: 0.5%;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 0.9em;
+} 
+
+.orderInfoContainer > div:nth-child(3) > div:nth-child(1) {
+    background-color: white;
+    color: rgb(90, 88, 88);
+    border: 1px solid rgb(90, 88, 88);
+    margin: 0% 2%;
+    padding: 1px 8px;
+} 
+
+/* 배송지 */
+.deliveryContainer {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 1% 2.5%;
+}
+
+.deliveryContainer > div:nth-child(1) {
+    display: flex;
+}
+
+.deliveryContainer > div:nth-child(1) > div:nth-child(1) {
+    display: flex;
+    flex: 1;
+    font-size: 1.3em;
+}
+.deliveryContainer > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    width: fit-content;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #B08968;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white; 
+}
+
+.deliveryContainer > div:nth-child(2),
+.deliveryContainer > div:nth-child(3),
+.deliveryContainer > div:nth-child(4) {
+    display: flex;
+}
+
+/* 결제정보 */
+.paymentContainer {
+    
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 내부 div를 가로 정렬 & 양쪽 끝으로 배치 */
+.paymentContainer > div:nth-child(1) {
+    margin: 10px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between; /* 왼쪽 텍스트 - 오른쪽 금액을 양끝으로 정렬 */
+    align-items: center; /* 수직 정렬 */
+    font-size: 1.5em;
+}
+
+.paymentContainer > div:nth-child(1) {
+    color: #2C7E3E;
+    font-weight: 600;
+}
+
+.paymentContainer > div:nth-child(2) {
+    margin: 7px 20px;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #2C7E3E;
+}
+
+.paymentContainer > div:nth-child(2) > div{
+    display: flex;
+    justify-content: space-between; /* 왼쪽 텍스트 - 오른쪽 금액을 양끝으로 정렬 */
+    align-items: center; /* 수직 정렬 */
+    margin: 2px 0px 2px 10px;
+    color: rgb(90, 89, 89);
+}
+
+.paymentContainer > div:nth-child(4) {
+    margin: 5px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between; /* 왼쪽 텍스트 - 오른쪽 금액을 양끝으로 정렬 */
+    align-items: center; /* 수직 정렬 */
+    font-size: 1.4em;
+    
+}
+
+/* 포인트혜택 */
+.pointContainer {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pointContainer > div> div {
+    margin: 15px 20px 0px 15px;
+    display: flex;
+    justify-content: space-between; /* 왼쪽 텍스트 - 오른쪽 금액을 양끝으로 정렬 */
+    align-items: center; /* 수직 정렬 */
+    font-size: 1.2em;
+    font-weight: 600;
+
+    >div{
+        span{
+            font-size: 0.6em;
+        }
+    }
+}
+
+.pointContainer > div> div:ntn-child(2) > span {
+    font-size: 0.3em;
+}
+
+.pointContainer > div > p {
+    color: gray;
+    margin: 2px 0px 15px 15px;
+}
+
+.userInfoContainer {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 1% 2.5%;
+}
+
+.userInfoContainer > div > div > span {
+    font-weight: 600;
+}
+
+.ownerCencle {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.ownerCencle >div {
+    padding: 8px 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: #EC2828;
+    box-shadow: 0px 2.5px 5px rgb(156, 155, 155); /* x, y, blur, 색상 */
+    cursor: pointer;
+}

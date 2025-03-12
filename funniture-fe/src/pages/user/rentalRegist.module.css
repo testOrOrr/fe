@@ -1,0 +1,380 @@
+/* 전체를 감싸는 컨테이너 */
+.container {
+    display: flex;
+    box-sizing: border-box;
+    padding: 40px 90px 40px 90px;
+    width: 100%;
+    background-color: #B08968;
+    gap: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    width: 100%;
+    background-color: #B08968;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.buttonContainer>div {
+    background-color: #2C7E3E;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 60px;
+    border-radius: 15px;
+    box-shadow: 0px 2.5px 5px rgb(71, 70, 70);
+}
+
+.rentalRegistHr {
+    width: calc(99.8% + 40px);
+    /* padding이 좌우 각각 20px씩 있으므로 보정 */
+    margin: 10px -20px;
+    /* 좌우 패딩만큼 마이너스 마진 */
+    border: 1.5px solid #B08968;
+}
+
+.rentalInfoContainer>h3,
+.payInfoContainer>h3 {
+    color: white;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* 렌탈 정보 컨테이너 (왼쪽) */
+.rentalInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 10px;
+}
+
+.rentalInfoContainer>div {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* 배송지 */
+.deliverySection>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deliverySection>div:nth-child(1)>div:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.4em;
+    max-width: 80%;
+}
+
+.deliverySection>div:nth-child(1)>div:nth-child(2) {
+    border: 2px solid #B08968;
+    box-shadow: 0px 2.5px 3px rgb(172, 169, 169);
+    align-items: center;
+    padding: 2px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.deliverySection>div:nth-child(2),
+.deliverySection>div:nth-child(3) {
+    margin: 3px 0px;
+}
+
+.deliverySection>select {
+    margin: 3px 0px;
+    padding: 3px;
+    width: 55%;
+    border: 2px solid #B08968;
+    border-radius: 5px;
+}
+
+/* 주문상품 */
+.orderItemSection>div:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.rentalInfoSubSection {
+    margin: 5px 0px;
+    width: 100%;
+    display: flex;
+    /* 내부 요소도 flex 적용 */
+    flex-direction: row;
+    /* 가로 정렬 */
+    align-items: center;
+}
+
+.rentalProductImg {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.rentalInfoSubSection>div>div {
+    margin: 10px;
+}
+
+.orderItemSection>div:nth-child(3) {
+    display: flex;
+    background-color: rgb(230, 226, 226);
+    margin-top: 10px;
+    width: 70%;
+    padding: 0.5%;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.orderItemSection>div:nth-child(3)>div:nth-child(1) {
+    background-color: white;
+    color: rgb(90, 88, 88);
+    border: 1px solid rgb(90, 88, 88);
+    margin: 0% 2%;
+    padding: 1px 8px;
+}
+
+/* 주문상품 - 할인 쿠폰 */
+.discountSection>div {
+    display: flex;
+    align-items: center;
+}
+
+.discountSection>div>div {
+    align-items: center;
+}
+
+.discountSection>div:nth-child(1)>div:nth-child(1) {
+    display: flex;
+    flex: 1;
+    width: 50%;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.discountSection>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.3em;
+
+}
+
+.discountSection>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+    border: 2px solid #B08968;
+    box-shadow: 0px 2.5px 3px rgb(172, 169, 169);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.discountSection>div:nth-child(1)>div:nth-child(2) {
+    display: flex;
+    flex: 1;
+    width: 50%;
+    color: #0687FF;
+    justify-content: flex-end;
+}
+
+.discountSection>div:nth-child(3)>div:nth-child(1) {
+    display: flex;
+    flex: 1;
+    width: 50%;
+    color: #2C7E3E;
+    font-weight: 600;
+    font-size: 1.4em;
+    justify-content: flex-start;
+}
+
+.discountSection>div:nth-child(3)>div:nth-child(2) {
+    display: flex;
+    flex: 1;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.discountSection>div:nth-child(3)>div:nth-child(2)>div:nth-child(1) {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.discountSection>div:nth-child(3)>div:nth-child(2)>div:nth-child(2) {
+    color: #2C7E3E;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+/* 포인트 */
+.pointSection>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pointSection>div:nth-child(1)>div:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.pointSection>div:nth-child(1)>div:nth-child(2) {
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #D85057;
+}
+
+.pointSubSection {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin: 10px 10px 10px 0px;
+}
+
+.pointSubSection>div:nth-child(1) {
+    display: flex;
+    width: 55%;
+    border: 2px solid #B08968;
+    padding: 2px 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.pointSubSection>div:nth-child(1)>div:nth-child(1) {
+    display: flex;
+    width: 50%;
+    color: #615c5c;
+    font-size: 0.9em;
+
+}
+
+.pointSubSection>div:nth-child(1)>div:nth-child(2) {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+.pointSubSection>div:nth-child(1)>div:nth-child(3) {
+    display: flex;
+    padding: 3px 5px;
+    font-size: 0.5em;
+    border-radius: 50%;
+    background-color: #615c5c;
+    align-items: center;
+    color: white;
+}
+
+.pointSubSection>div:nth-child(2) {
+    display: flex;
+    border: 2px solid #B08968;
+    box-shadow: 0px 2.5px 3px rgb(172, 169, 169);
+    padding: 2px 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+
+/* 결제 정보 컨테이너 (오른쪽) */
+.payInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 10px;
+}
+
+.payInfoContainer>div {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.payInfoContainer>div>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 결제상세 */
+.payInfoSection>div:nth-child(1),
+.payInfoSection>div:nth-child(2),
+.payInfoSection>div:nth-child(3) {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+
+.payInfoSection>div:nth-child(1) {
+    color: #008CFF;
+}
+
+.payInfoSection>div:nth-child(2) {
+    color: #D85057;
+}
+
+.payInfoSection>div:nth-child(3) {
+    color: gray;
+}
+
+.payInfoSection>div:nth-child(5) {
+    color: #2C7E3E;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.payInfoSection>div:nth-child(6) {
+    color: gray;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* 포인트 혜택 */
+.pointAddSection>div:nth-child(1),
+.pointAddSection>div:nth-child(2) {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.pointAddSection>p {
+    margin: 1px;
+    padding: 0;
+    color: gray;
+}
+
+.discountSection>div>div>span {
+    margin-left: 3px;
+    font-size: 0.9em;
+    align-self: end;
+}
+
+.discountSection>div>div:nth-child(2)>div>span {
+
+    font-size: 0.85em;
+    align-self: end;
+}
+
+.pointSection>div>div>span {
+    font-size: 0.85em;
+    align-self: end;
+}
+
+.payInfoSection>div>div>span {
+    font-size: 0.85em;
+    align-self: end;
+}
+
+.pointAddSection>div>div>span {
+    font-size: 0.85em;
+    align-self: end;
+}

@@ -1,0 +1,190 @@
+.mainContentBox {
+    width: 100%;
+    max-height: fit-content;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .title {
+        font-size: 2em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            height: 1.2em;
+            margin-right: 10px;
+        }
+
+        span {
+            color: #7F5539;
+        }
+
+        .moreView {
+            font-size: 0.4em;
+            align-self: flex-end;
+            color: #A8a8a8;
+            cursor: pointer;
+        }
+    }
+
+    .contentBox {
+        width: 100%;
+        height: 250px;
+        border: solid 1px #7F7F7F;
+        border-radius: 20px;
+        overflow-y: scroll;
+
+        padding: 20px;
+        box-sizing: border-box;
+
+        >div {
+            border: solid 1px #7F7F7F;
+            width: 100%;
+            min-height: 115px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .noticeContentTitle {
+                font-size: 0.9em;
+                color: #7F7F7F;
+            }
+
+            .noticeContentText {
+                font-size: 1.4em;
+                font-weight: 700;
+            }
+
+            .noticeContentAt {
+                font-size: 0.7em;
+                color: #A8a8a8;
+            }
+
+        }
+    }
+
+    .returnListBox {
+        border: solid 1px #7F5539;
+        border-radius: 20px;
+        height: 300px;
+        box-sizing: border-box;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+
+        button {
+            height: fit-content;
+            padding: 10px 5px;
+            background: none;
+        }
+
+        >div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 10px;
+
+            .returnItem {
+                box-sizing: border-box;
+                padding: 10px;
+                border: solid 1px #7F7F7F;
+                border-radius: 10px;
+                width: 25%;
+                aspect-ratio: 1/1;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+
+                .imgBox {
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-width: 80%;
+                        max-height: 100%;
+                    }
+                }
+
+                >div {
+                    display: flex;
+                    justify-content: center;
+
+                    span {
+                        color: #7F5539;
+                        margin-right: 10px;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+
+            .noReturnItem {
+                width: 100%;
+                font-size: 1.5em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .reviewBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        >div {
+            width: 49.5%;
+            border: solid 1px #7F7F7F;
+            border-radius: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .reviewHeader {
+                font-size: 1em;
+                font-weight: bold;
+                color: #7F5539;
+                margin-bottom: 5px;
+            }
+
+            .reviewContent {
+                font-size: 0.9em;
+                color: #333333;
+                margin-bottom: 10px;
+                line-height: 1.4em;
+            }
+
+            .reviewDate {
+                font-size: 0.8em;
+                color: #A8a8a8;
+                text-align: right;
+                /* 등록일을 오른쪽으로 정렬 */
+            }
+        }
+    }
+
+}

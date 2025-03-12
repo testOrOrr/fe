@@ -1,0 +1,24 @@
+/* 페이지네이션 */
+.pagination {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 5%;
+    border-radius: 30px;
+    border: 2px solid #7F5539;
+    margin-top: auto;
+    font-size: 1.1em;
+    font-family: 'Paperlogy';
+    margin-bottom: 1%;
+
+    span {
+        cursor: pointer;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}

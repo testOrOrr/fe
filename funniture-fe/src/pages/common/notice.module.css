@@ -1,0 +1,108 @@
+.wholeContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+
+    .pageName {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            font-size: 0.7em;
+            background: none;
+            align-self: flex-end;
+            padding: 3px 10px;
+            background-color: #7F5539;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+    }
+
+    .noticeBox {
+        width: 100%;
+        flex: 1;
+        border: solid 3px #7F5539;
+        border-radius: 10px;
+        padding: 10px;
+        max-height: 70vh;
+        display: flex;
+        flex-direction: column;
+
+        overflow: hidden;
+
+        .noticeListBox {
+            width: 100%;
+            max-height: 60vh;
+            overflow: scroll;
+        }
+
+        .noticeItem {
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            border-bottom: solid 1px #7F5539;
+            cursor: pointer;
+
+            >div {
+                width: 15%;
+                text-align: center;
+            }
+
+            .noticeContentTitle {
+                width: 50%;
+            }
+
+            .noticeContentAt {
+                width: 20%;
+            }
+        }
+
+        .noticeTitle {
+            font-size: 1.2em;
+            font-weight: 700;
+            border-bottom: solid 1px #7F5539;
+        }
+
+        .noticeDetail {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            .detailTop {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                align-items: center;
+                border-bottom: solid 1px #7F5539;
+                margin-bottom: 10px;
+
+                .detailTitle {
+                    font-size: 1.3em;
+                    font-weight: 700;
+                }
+
+                .detailAt {
+                    font-size: 0.8em;
+                    align-self: end;
+                    color: #797979;
+                }
+            }
+
+            .detailContent {
+                width: 100%;
+                white-space: pre-line;
+                word-break: break-word;
+                flex: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,189 @@
+.container{
+    border: solid 2px #7F5539;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ownerRentalTab {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4em;
+            font-weight: 700;
+            cursor: pointer; 
+            border-right: solid 3px rgb(168, 163, 163);
+            padding: 0px 8px;
+            margin-top: -25px;
+        }
+
+        >div:last-child{
+            border: none;
+        }
+        
+        .selected {
+            color: #7F5539;
+        }
+}
+
+.periodContainer{
+    display: flex;
+    align-items: self-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 6%;
+
+        >div:nth-child(1){
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+            
+            >div:nth-child(1){
+                color: #7F5539;
+            }
+            >div:nth-child(2),
+            >div:nth-child(3),
+            >div:nth-child(4),
+            >div:nth-child(5){
+                color: white;
+                background-color: #B08968;
+                padding: 0px 12px;
+                border-radius: 15px;
+                cursor: pointer;
+            }   
+        }
+        >div:nth-child(2) {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 5px;
+            
+            >div:nth-child(1){
+                color: white;
+                background-color: #B08968;
+                padding: 0px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-right: 20px;
+            } 
+        }     
+}
+
+/* 선택 된 만료 기간 */
+.periodContainer> div:nth-child(1) >div.selected {
+    background-color: #7F5539;
+    /* 선택된 항목 강조 색상 */
+    font-weight: bold;
+}
+
+/* 선택 된 탭 */
+.ownerRentalTab> div:nth-child(1) >div.selected {
+    color: #7F5539;
+}
+
+/* 예약진행상태 select 스타일 제거 */
+.statusSelect {
+    
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #212529;
+    border: none;  /* 직접 설정한 테두리 */
+    background-color: transparent;  /* 배경색을 투명으로 설정 */
+    background-image: none;  /* 기본 드롭다운 화살표 제거 */
+    outline: none;           /* 포커스 시 기본 테두리 제거*/
+}
+
+.rentalContainer{
+    width: 100%;
+    height: 74%;
+    
+    td:nth-child(10){
+        display: flex;
+        justify-content: center;
+    }
+
+    td:nth-child(10) > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        border-radius: 5px;
+        color: white;
+        padding: 1px 0px;
+    }
+    
+    /* 상태별 색상 적용 */
+    .statusPending { background-color: #898888; }  /* 예약대기 */
+    .statusConfirmed { background-color: #008CFF; }  /* 예약완료 */
+    .statusCanceled { background-color: #EC2828; }  /* 예약취소 */
+    .statusDelivering { background-color: #9D6D2E; }  /* 배송중 */
+    .statusDelivered { background-color: #2C7E3E; }  /* 배송완료 */
+    .statusReturnRequested { background-color: #B47EB3; }  /* 반납요청 */
+    .statusCollecting { background-color: #9D6D2E; }  /* 수거중 */
+    .statusReturned { background-color: #023E8A; }  /* 반납완료 */
+
+    .rentalTable{
+        width: 100%;
+        border-collapse: collapse; /* 세로줄 제거 */
+        text-align: center;
+        font-size: 0.95em;
+    }
+    
+    .rentalTable thead {
+        background-color: #d3d3d3; /* 회색 배경 */
+        font-weight: bold;
+    }
+    
+    .rentalTable th{
+        padding: 8px;
+    }
+
+    .rentalTable td {
+        padding: 10px;
+    }
+    
+    .rentalTable tbody tr {
+        border-bottom: 1px solid #5e5a5abb; /* 가로줄만 유지 */
+    }
+    
+    .rentalTable tbody tr:hover {
+        background-color: #f5f5f5; /* 마우스 오버 효과 */
+    }
+
+}
+
+.pagingContainer{
+    width: 100%;
+    height: 10%;
+        
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            >div{
+                margin: 0;
+                height: fit-content;
+            }
+        }
+}
+
+.doubleClickable,
+.clickable {
+    cursor: pointer;
+}
+
+

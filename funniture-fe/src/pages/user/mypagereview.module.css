@@ -1,0 +1,122 @@
+/* 전체 컨테이너 */
+.activeContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 3% 5%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #D9A588; /* 외곽선 색상 */
+    border-radius: 10px; /* 둥글게 처리 */
+}
+
+/* 제목 스타일 */
+.activeInquiryTitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #7F5539; /* 갈색 계열 */
+    margin-bottom: 20px;
+}
+
+/* 탭 버튼 컨테이너 */
+.tabContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* 탭 버튼 스타일 */
+.tabButton {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.activeTab {
+    background-color: #7F5539; /* 선택된 탭 색상 */
+    color: white; /* 글씨 색상 */
+}
+
+/* 리뷰 리스트 컨테이너 */
+.reviewListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 카드 간격 */
+}
+
+/* 리뷰 카드 스타일 */
+.reviewCard {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd; /* 카드 테두리 */
+    border-radius: 10px; /* 둥근 모서리 */
+    padding: 15px;
+    background-color: white; /* 카드 배경색 */
+}
+
+/* 상품 이미지 스타일 */
+.productImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; /* 이미지 둥글게 처리 */
+    margin-right: 15px;
+}
+
+/* 리뷰 내용 스타일 */
+.reviewContent {
+    flex-grow: 1;
+}
+
+.reviewContent p {
+    margin-bottom: 5px; /* 텍스트 간격 */
+}
+
+.productName {
+    font-size: 18px;
+    font-weight: bold; /* 상품명 강조 */
+}
+
+/* 버튼 컨테이너 스타일 */
+.actionButtons {
+    display: flex;
+    flex-direction: column; /* 버튼 세로 정렬 */
+    gap: 10px; /* 버튼 간격 */
+}
+
+/* 버튼 공통 스타일 */
+.writeButton,
+.repurchaseButton,
+.deleteButton {
+    background-color: #7F5539; /* 기본 버튼 색상 */
+    color: white; /* 텍스트 색상 */
+    border: none;
+    padding: 10px 15px; /* 버튼 크기 조정 */
+    border-radius: 20px; /* 둥근 모양 처리 */
+    font-size: 14px; /* 글씨 크기 조정 */
+    font-weight: bold; /* 글씨 두께 강조 */
+    cursor: pointer;
+}
+
+/* 버튼 호버 효과 */
+.writeButton:hover,
+.repurchaseButton:hover,
+.deleteButton:hover {
+    background-color: #A67C5B; /* 호버 시 색상 변경 (밝은 갈색) */
+}
+
+/* 개별 버튼 색상 설정 (필요시) */
+.writeButton {
+    background-color: #7F5539; /* 리뷰작성 - 진한 갈색 */
+}
+
+.repurchaseButton {
+    background-color: #A67C5B; /* 재구매 - 중간 갈색 */
+}
+
+.deleteButton {
+    background-color: #D9A588; /* 삭제 - 밝은 갈색 */
+}
+

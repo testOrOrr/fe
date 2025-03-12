@@ -1,0 +1,27 @@
+.verification2 button {
+    height: 50px;
+    padding: 0 15px;
+    background-color: #B08968; /* 기본 활성화 색상 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.verification2 button:disabled {
+    background-color: #ccc; /* 비활성화 시 배경색 */
+    color: white; /* 비활성화 시 글자색 */
+    cursor: not-allowed; /* 비활성화 시 커서 모양 */
+    opacity: 0.7; /* 약간의 투명도 추가 */
+}
+
+.passwordInput {
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    gap: 10px; /* 입력 필드와 버튼 사이 간격 */
+}
+
+.passwordInput input {
+    width: 200%;
+}

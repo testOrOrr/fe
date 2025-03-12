@@ -1,0 +1,291 @@
+.wholeContainer {
+    border: solid 2px #7F5539;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    .productBox {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .Btns {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .BtnsLeft {
+                display: flex;
+
+                input {
+                    display: none;
+                }
+
+                label:first-of-type,
+                label:nth-of-type(2) {
+                    border-right: solid 2px black;
+                }
+
+                label {
+                    font-weight: 700;
+                    padding: 0px 5px;
+                    color: #AAA9A9;
+                    font-size: 1.1em;
+                    display: flex;
+                    width: max-content;
+                    min-width: 115px;
+                    align-items: center;
+                    justify-content: start;
+
+                    div {
+                        border-radius: 50%;
+                        height: 90%;
+                        aspect-ratio: 1/1;
+                        margin-left: 8px;
+                        font-size: 0.6em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        background-color: #AAA9A9;
+                    }
+                }
+
+                input[type='radio']:checked+label {
+                    color: #7F5539;
+                }
+
+                input[type='radio']:checked+label div {
+                    background-color: #7F5539;
+                }
+            }
+
+            .BtnsRight {
+                width: 30%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                box-sizing: border-box;
+
+                >button {
+                    height: 100%;
+                    margin-left: 10px;
+                    border: solid 2px #7F5539;
+                }
+
+                .StatusBtn {
+                    width: 60%;
+                    height: 100%;
+                    border: solid 2px #7F5539;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    justify-content: space-between;
+
+                    select {
+                        padding: 0px 10px;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        border: none;
+                        width: 50%;
+                        height: 100%;
+                        font-family: 'Paperlogy';
+                    }
+
+                    select:focus-visible {
+                        border: none;
+                        outline: none;
+                    }
+
+                    button {
+                        width: 50%;
+                        border-radius: 0;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+
+            button {
+                font-family: 'Paperlogy';
+                padding: 8px 12px;
+                border-radius: 5px;
+                border: none;
+                background-color: #7F5539;
+                color: white;
+                height: 100%;
+            }
+
+            >button {
+                border: solid 2px #7F5539;
+            }
+        }
+
+        .productList {
+            border: solid 2px #7F5539;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .noProductBox {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                >div {
+                    font-size: 1.5em;
+                }
+            }
+
+            .productItem {
+                display: flex;
+                padding: 15px 30px;
+                box-sizing: border-box;
+                justify-content: space-between;
+                align-items: center;
+
+                min-height: 115px;
+
+                border: solid 1px black;
+                border-radius: 5px;
+
+                margin-bottom: 10px;
+
+                .checkboxDiv {
+                    width: 20px;
+                    display: flex;
+                    align-items: center;
+
+                    input[type='checkbox'] {
+                        width: 20px;
+                        aspect-ratio: 1/1;
+                        margin: 0;
+                    }
+                }
+
+                >div {
+                    width: 10%;
+                }
+
+                .imgBox {
+                    min-width: 100px;
+                    width: 11%;
+                    aspect-ratio: 1 / 1;
+                    border: solid 1px black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    box-sizing: border-box;
+
+                    img {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                }
+
+                .productInfo {
+                    width: 20%;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: space-around;
+
+                    .productName {
+                        word-break: keep-all;
+                    }
+
+                    .productRentalInfo {
+                        display: flex;
+
+                        div:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .statusTotalBox {
+                    max-width: 15%;
+                    width: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .productStatus {
+                        color: white;
+                        background-color: #0675CF;
+                        border-radius: 30px;
+                        padding: 5px 15px;
+                        text-align: center;
+                        width: fit-content;
+                        max-width: 95%;
+                    }
+
+                    .optionBox {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        margin-top: 10px;
+                    }
+                }
+
+
+                .editBtns {
+                    display: flex;
+                    flex-direction: column;
+
+                    button {
+                        font-family: 'Paperlogy';
+                        padding: 8px 10px;
+                        color: white;
+                        background-color: #2C7E3E;
+                        border: none;
+                        border-radius: 5px;
+                    }
+
+                    button:last-child {
+                        margin-top: 10px;
+                        background-color: #AAA9A9;
+                    }
+                }
+
+            }
+
+            .paginationBox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+
+                >div {
+                    margin: 0;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

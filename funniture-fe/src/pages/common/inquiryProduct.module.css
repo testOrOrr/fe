@@ -1,0 +1,192 @@
+/* rental.module.css */
+.inquiryBox {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    /* 배경색 추가 */
+}
+
+.inquiryList {
+    margin-top: 20px;
+    /* 리스트 상단 간격 */
+}
+
+.inquiryItem {
+    padding: 15px;
+    margin-bottom: 15px;
+    /* 각 항목 간의 세로 간격 */
+    border-bottom: 1px solid #eee;
+}
+
+.inquiryHeader {
+    font-weight: bold;
+    margin-bottom: 8px;
+    /* 제목과 메타 정보 사이의 간격 */
+}
+
+.inquiryMeta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.answerCount {
+    margin-left: 10px;
+    /* 답변 수와 다른 정보 사이의 가로 간격 */
+    color: #007bff;
+    /* 파란색 */
+}
+
+
+/* 상품 페이지에서 문의 버튼 */
+.inquiryWriteButton {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background-color: #fdf6f0 !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+    margin-left: auto;
+    color: rgb(68, 164, 202) !important;
+    /* 글자 색을 파란색으로 설정 */
+    border: 2px solid rgb(68, 164, 202) !important;
+    /* 테두리 색을 파란색으로 설정 */
+}
+
+/* 모달 css */
+/* 모달 전체 */
+.customModal {
+    border-radius: 10px;
+    /* 모서리 둥글게 */
+    overflow: hidden;
+}
+
+.modalHeader {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modalBody {
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* 배경색 */
+}
+
+/* 상품 정보 */
+.productInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* 아래 컨텐츠와 간격 */
+}
+
+.productImage {
+    margin-left: 3%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.productName {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 폼 그룹 */
+.formGroup {
+    margin-bottom: 20px;
+    /* 각 입력 필드 간 간격 */
+}
+
+.formGroup label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    /* 라벨과 입력 필드 사이 간격 */
+    margin-right: 85%;
+}
+
+.formGroup select,
+.formGroup textarea,
+.formGroup input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    resize: none;
+    /* 크기 조절 비활성화 */
+}
+
+/* 글자 수 제한 표시 */
+textarea+small {
+    display: block;
+    text-align: right;
+    /* 오른쪽 정렬 */
+    font-size: 12px;
+    color: #888;
+    /* 회색 글자 */
+}
+
+/* 체크박스와 라벨 정렬 */
+
+.checkBox {
+    margin-right: 85%;
+}
+
+/* 모달 푸터 버튼 */
+.modalFooter {
+    display: flex;
+    justify-content: space-between;
+    /* 버튼 양 끝 정렬 */
+    padding: 15px;
+}
+
+.modalFooter button {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.modalFooter button:first-child {
+    /* 취소 버튼 */
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.modalFooter button:last-child {
+    /* 등록 버튼 */
+    background-color: #a47c48;
+    /* 갈색 톤 */
+    color: white;
+}
+
+/* 답변 확인 박스 */
+.answerBox {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fdf6f0; /* 연한 색 배경 */
+}
+
+.commentItem {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.commentItem strong {
+    font-weight: bold;
+    color: #007bff; /* 파란색 */
+}
+
+.commentItem p {
+    margin: 5px 0;
+    color: #333;
+}

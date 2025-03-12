@@ -1,0 +1,32 @@
+.topDownBtns {
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 3%;
+    transform: translateY(0px);
+    transition: 0.3s ease-out;
+
+    >div {
+        background-color: #7F5539;
+        border-radius: 50%;
+        aspect-ratio: 1 /1;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1 /1;
+        }
+    }
+
+    .chatBtn {
+        position: relative;
+    }
+}

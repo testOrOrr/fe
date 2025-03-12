@@ -1,0 +1,157 @@
+.activeContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 3% 5%;
+    box-sizing: border-box;
+}
+
+
+.activeInquiryTitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #7F5539;
+    margin-bottom: 20px;
+}
+
+.activeRentalContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 620px; */
+    flex: 1;
+}
+
+.activeRentalTable {
+    width: 100%;
+    border-collapse: collapse;
+    /* 세로줄 제거 */
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.activeRentalTable>tbody>tr>td:nth-child(7) {
+
+    display: flex;
+    justify-content: center;
+}
+
+.activeRentalTable>tbody>tr>td>div {
+    width: 80%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #B08968;
+    color: white;
+    cursor: pointer;
+}
+
+.activeRentalTable thead {
+    background-color: #d3d3d3;
+    /* 회색 배경 */
+    font-weight: bold;
+}
+
+.activeRentalTable th {
+    height: 40px;
+}
+
+.activeRentalTable td {
+    padding: 10px;
+}
+
+.activeRentalTable tbody tr {
+    border-bottom: 1px solid #5e5a5abb;
+    /* 가로줄만 유지 */
+}
+
+.activeRentalTable tbody tr:hover {
+    background-color: #f5f5f5;
+    /* 마우스 오버 효과 */
+}
+
+/* ////////////////// */
+/* 답변 상태 버튼 스타일 */
+.answerButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    color: white;
+}
+
+/* 답변 대기 버튼 스타일 */
+.answerButton.waiting {
+    background-color: #b09060; /* 갈색 계열 */
+}
+
+/* 답변 완료 버튼 스타일 */
+.answerButton.complete {
+    background-color: #6aa84f;
+}
+
+
+/* 모달 컨텐츠 스타일 */
+.modalContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 각 항목 간 간격 */
+    font-size: 1em;
+    color: #333;
+}
+
+/* 상품 정보 섹션 */
+.productInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 이미지와 텍스트 간 간격 */
+    margin-bottom: 20px;
+}
+
+.productImage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* 이미지 비율 유지 */
+    border-radius: 10px; /* 이미지 둥근 모서리 */
+    border: 1px solid #ddd; /* 이미지 테두리 */
+}
+
+.productDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.productDetails p {
+    margin: 0; /* 기본 여백 제거 */
+}
+
+/* 답변 내용 섹션 */
+.answerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answerSection p {
+    margin: 0; /* 기본 여백 제거 */
+}
+
+.answerSection .answerContent {
+    font-weight: bold; /* 답변 내용 강조 */
+}
+
+/* 확인 버튼 스타일 */
+.modalFooterButton {
+    background-color: #7F5539; /* 버튼 배경색 */
+    color: white; /* 버튼 텍스트 색상 */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.modalFooterButton:hover {
+    background-color: #6a452f; /* 호버 효과 */
+}

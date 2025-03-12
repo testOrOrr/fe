@@ -1,0 +1,272 @@
+.wholeContainer {
+    border: solid 2px #7F5539;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    /* 입력항목 하나씩 */
+    .productInfoInput {
+        border: solid 1px black;
+        padding: 10px;
+        box-sizing: border-box;
+        min-height: 100px;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+        .InfoInputTitle {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .description {
+            font-size: 0.7em;
+            color: #A5A3A3;
+            margin-bottom: 10px;
+        }
+
+        .productNameBox {
+            display: flex;
+            width: 50%;
+            border: solid 1px #A5A3A3;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: end;
+            height: 30px;
+
+            input {
+                width: 65%;
+                height: 70%;
+                padding: 0 10px;
+                border: none;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            >div {
+                border: solid 1px black;
+                height: 100%;
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                background-color: #A5A3A3;
+                color: white;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+                >div:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .productCategoryBox {
+            display: flex;
+            flex: 1;
+            align-items: center;
+
+            select {
+                width: 20%;
+                height: 100%;
+                padding: 10px 5px;
+            }
+
+            select:first-child {
+                margin-right: 10px;
+            }
+        }
+
+        .productImgBox {
+            display: flex;
+            align-items: end;
+
+            >div {
+                width: 200px;
+                border-radius: 10px;
+                aspect-ratio: 1/1;
+                border: solid 1px #A5A3A3;
+                margin-right: 10px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url("../../assets/images/a.jpg");
+            }
+
+            >input {
+                display: none;
+            }
+
+            label {
+                background-color: #7F5539;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        }
+
+        .productDescriptionBox {
+            width: 100%;
+            min-height: 150px;
+            border: solid 1px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            >textarea {
+                width: 98%;
+                height: 92%;
+                resize: none;
+                border: none;
+            }
+        }
+
+        .productPriceBox {
+            display: flex;
+
+            >input {
+                margin-right: 10px;
+                text-align: center;
+            }
+        }
+
+        .OptionPriceTop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                border: none;
+                background-color: #7F5539;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-family: 'Paperlogy';
+            }
+        }
+
+        .productRentalOptionBox {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+
+            .RentalInfoItem {
+                display: flex;
+                padding: 10px;
+                justify-content: space-between;
+
+                border: solid 1px #A5A3A3;
+                margin-bottom: 10px;
+                border-radius: 10px;
+
+                .rentalTerm,
+                .rentalCost,
+                .rentalAS {
+                    justify-content: center;
+                    width: 25%;
+                    display: flex;
+                    align-items: center;
+                    border: solid 1px black;
+                    color: #A5A3A3;
+                    position: relative;
+
+                    select {
+                        width: 80%;
+                        height: 100%;
+                        text-align: center;
+                    }
+
+                    input {
+                        /* padding: 5px; */
+                        width: 100%;
+                        border: none;
+                        text-align: center;
+                        padding: 0;
+                    }
+
+                    >div {
+                        position: absolute;
+                        right: 10px;
+                    }
+                }
+
+                .rentalTerm {
+                    border: none;
+                }
+
+                .removeBtn {
+                    width: 10%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    button {
+                        background: none;
+                        color: red;
+                        border: none;
+                        font-size: 2em;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+            .RentalInfoItemTitle {
+                border: none;
+                border-bottom: solid 1px #838181;
+                text-align: center;
+                color: #838181;
+                border-radius: 0;
+
+                .rentalTerm,
+                .rentalCost,
+                .rentalAS {
+                    border: none;
+                }
+            }
+        }
+
+        .stockBox {
+            display: flex;
+
+            >input {
+                text-align: center;
+            }
+        }
+    }
+
+    .submitBtnBox {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        button {
+            background-color: #7F5539;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            font-family: 'Paperlogy';
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+.quillBox {
+    display: flex;
+    flex-direction: column;
+}

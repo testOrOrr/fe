@@ -1,0 +1,233 @@
+/* searchBox 와 rentalBox 감싸는 div*/
+.adminRentalContent {
+    width: 100%;
+    height: calc(98% - 1.8em - 15px);
+    margin-bottom: 0%;
+}
+
+/* searchReset 와 rentalSearch 를 감싸는 div */
+.rentalSearchBox {
+    display: flex;
+    height: 5%;
+    gap: 1%;
+}
+
+
+
+/* 예약 조회 결과 없을 시 텍스트 */
+.noResultsMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+/* 검색 div */
+.rentalSearch {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* 검색 select, input, img */
+.rentalSearch>select,
+.rentalSearch>input,
+.rentalSearch>img {
+    border: none;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /* 모서리 둥글게 */
+    padding: 5px;
+    /* 내부 여백 */
+    border: 1px solid #7F5539;
+    /* 테두리 스타일 */
+    height: 80%;
+    font-family: 'Paperlogy';
+    background-color: white;
+    color: #726f6f;
+}
+
+.rentalSearch>select {
+    padding: 0 5px;
+}
+
+.rentalSearch>div {
+    display: flex;
+    align-items: center;
+
+    select {
+        font-size: 1px;
+    }
+}
+
+.rentalSearch>img {
+    width: 33px;
+    cursor: pointer;
+}
+
+/* 렌탈 박스 ( rentalItem, pagination ) */
+.rentalBox {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid #7F5539;
+}
+
+/* rentalItem */
+.rentalSubBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 97%;
+    height: 90%;
+    margin: 1%;
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    max-height: 45px;
+    border-bottom: 1px solid #7F5539;
+    padding-right: 8px;
+}
+
+.title>div>p,
+.rentalItems>div>p {
+    margin: 0;
+}
+
+.rentalContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 10px;
+
+    flex: 1;
+    overflow: scroll;
+}
+
+.rentalContainer::-webkit-scrollbar {
+    display: block;
+    /* 스크롤바를 보이게 설정 */
+    width: 8px;
+    /* 스크롤바의 너비를 설정 */
+}
+
+.rentalContainer::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* 스크롤바 thumb의 색을 설정 */
+    border-radius: 4px;
+    /* 스크롤바 thumb의 테두리를 둥글게 설정 */
+}
+
+.rentalItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    max-height: 45px;
+    border: 1px solid #7F5539;
+    border-radius: 10px;
+
+    /* display: none; */
+}
+
+.title>div,
+.rentalItems>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+/* 관리자 페이지에서 버튼 CCS */
+.adminSelectButton {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background-color: #fdf6f0 !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+}
+
+.adminSelectButton button {
+    border: none !important;
+    padding: 8px 14px !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    border-radius: 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* 기본 버튼 (비선택) */
+.adminSelectButton button:not(.active) {
+    background-color: #f2f2f2 !important;
+    color: #888 !important;
+}
+
+/* 선택된 버튼 (제공자) */
+.adminSelectButton .active {
+    background-color: #a57b5b !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* 접근 권한 변경 버튼 */
+.adminSelectButton button:last-child {
+    margin-left: auto !important;
+    background-color: #a57b5b !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.pagingContainer {
+    width: 100%;
+    height: 10%;
+
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        >div {
+            margin: 0px 0px 25px 0px;
+            height: fit-content;
+        }
+    }
+}
+
+.dropdownContent {
+    display: flex;
+    border: 1px solid #7F5539;
+    border-radius: 10px;
+    padding: 1% 2%;
+    gap: 40px;
+    margin-top: -8px;
+}
+
+.dropdownContent>div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #7F5539;
+    padding: 1%;
+    flex: 1;
+    width: 50%;
+    color: #7F5539;
+}
+
+.dropdownContent>div>div:nth-child(1) {
+    color: #7F5539;
+    font-weight: 600;
+    font-size: 1.2em;
+}

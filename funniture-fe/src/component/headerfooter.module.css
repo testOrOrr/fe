@@ -1,0 +1,136 @@
+footer {
+    width: 100%;
+    height: 60px;
+    min-height: 60px;
+    background-color: #E7E7E4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #AAA9A9;
+}
+
+header {
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+
+    box-sizing: border-box;
+    padding: 0 10%;
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 70px;
+
+    background-color: white;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+
+    >div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            height: 50%;
+            cursor: pointer;
+        }
+
+        .switchBtns {
+            height: 40%;
+            width: 9%;
+            min-width: 110px;
+            border-radius: 40px;
+
+            background-color: #F3F5F7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+
+            input {
+                display: none;
+            }
+
+            input:checked+label {
+                color: #ffffff;
+                background-color: #B08968;
+                transition: all 0.3s ease-in-out;
+            }
+
+            label {
+                height: 100%;
+                border-radius: 40px;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #A5A3A3;
+            }
+        }
+
+        .searchBox {
+            border: solid 1px #AAA9A9;
+            display: flex;
+            width: 55%;
+            height: 60%;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 40px;
+
+            input {
+                flex: 1;
+                height: 50%;
+                margin-right: 10px;
+                border: none;
+            }
+
+            img {
+                height: 50%;
+            }
+        }
+
+        .loginBtn {
+            width: 7%;
+            height: 45%;
+            border-radius: 8px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #7F5539;
+            color: white;
+
+            cursor: pointer;
+        }
+
+    }
+}
+
+@media screen and (max-width:1200px) {
+    header {
+        >div {
+
+            .searchBox {
+                width: 45%;
+            }
+
+            .loginBtn {
+                font-size: 0.8em;
+            }
+
+        }
+
+    }
+}

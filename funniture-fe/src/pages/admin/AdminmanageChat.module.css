@@ -1,0 +1,189 @@
+.questionListContainer {
+    width: 100%;
+    height: 100%;
+
+    .questionListLevelBox {
+        border: solid 2px #7F5539;
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 10%;
+        background-color: white;
+        box-sizing: border-box;
+
+        input {
+            display: none;
+        }
+
+        >label {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #a8a8a8;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        input[type='radio']:checked+label {
+            color: #7F5539;
+        }
+    }
+
+    .btnBox {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        margin: 10px 0;
+
+        >button {
+            min-width: 8%;
+            padding: 5px 10px;
+            border: none;
+            background: none;
+            background-color: #7F5539;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+
+    .contentBox {
+        width: 100%;
+        height: calc(90% - 40px - 1em);
+        border: solid 2px #7F5539;
+        border-radius: 5px;
+        background-color: white;
+
+        box-sizing: border-box;
+        padding: 0 10px;
+
+        overflow: hidden;
+
+        .contentItem {
+            width: 100%;
+            display: flex;
+
+            background-color: #FCF4EE;
+            border-radius: 30px;
+            margin: 10px 0;
+            align-items: center;
+
+            >div {
+                word-break: keep-all;
+                box-sizing: border-box;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                >div,
+                input,
+                textArea {
+                    border: solid 1px black;
+                    border-radius: 15px;
+                    box-sizing: border-box;
+                    padding: 5px 10px;
+                    background-color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    text-align: start;
+
+                    input {
+                        width: 35%;
+                        aspect-ratio: 1/1;
+                    }
+
+                    button {
+                        width: 25%;
+                        background: none;
+                        height: fit-content;
+                        border: none;
+                    }
+                }
+            }
+
+            .refQu {
+                flex: 0.5;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                select {
+                    width: 95%;
+                    border: none;
+                }
+            }
+
+            .question {
+                flex: 1;
+
+                >input {
+                    justify-content: start;
+                }
+            }
+
+            .answer {
+                flex: 1.5;
+
+                >textArea {
+                    justify-content: start;
+                    resize: none;
+                }
+            }
+
+            .nextQu,
+            .adminAble,
+            .deleteBtn {
+                flex: 0.3;
+
+                >div {
+                    border: none;
+                    background: none;
+                }
+            }
+        }
+
+        .contentTitle {
+            background-color: white;
+            border-radius: 0;
+            margin: 0;
+            padding: 10px 0;
+            border: none;
+            border-bottom: solid 1px black;
+            box-sizing: border-box;
+            padding-right: 18px;
+
+            >div {
+                text-align: center;
+                height: 100%;
+                border: none;
+            }
+        }
+
+        .listBox {
+            width: 100%;
+            overflow: auto;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            padding-right: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            display: block;
+            /* 스크롤바를 보이게 설정 */
+            width: 8px;
+            /* 스크롤바의 너비를 설정 */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            /* 스크롤바 thumb의 색을 설정 */
+            border-radius: 4px;
+            /* 스크롤바 thumb의 테두리를 둥글게 설정 */
+        }
+
+    }
+}

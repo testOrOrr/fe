@@ -1,0 +1,169 @@
+.wholeContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .btnBox {
+        width: 100%;
+        height: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+
+        button {
+            cursor: pointer;
+            height: auto;
+            padding: 5px 20px;
+            border-radius: 10px;
+            background: none;
+            background-color: #7F5539;
+            color: white;
+            border: none;
+            text-align: center;
+        }
+    }
+
+    .listWholeBox {
+        width: 100%;
+        border: solid 2px #7F5539;
+        height: 92%;
+        border-radius: 10px;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 10px;
+        box-sizing: border-box;
+
+        .noticeList {
+            flex: 1;
+            overflow: scroll;
+        }
+
+        .noticeItem {
+            border-bottom: solid 1px #7F5539;
+            display: flex;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+            cursor: pointer;
+
+            >div {
+                width: 15%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .contentTitle {
+                width: 50%;
+                white-space: pre-line;
+                word-break: keep-all;
+                text-align: center;
+            }
+
+            .contentAt {
+                width: 20%;
+            }
+        }
+
+        .noticeTitle {
+            border: none;
+            margin-bottom: 0;
+            border-bottom: solid 1px #7F5539;
+
+            >div {
+                text-align: center;
+                font-size: 1.2em;
+                font-weight: 700;
+            }
+        }
+
+        .noticeDetail {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+
+            .noticeInfo {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: solid 1px #7F5539;
+                padding: 10px 0;
+
+                .noticeTitle {
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    border: none;
+                }
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+
+            .noticeContent {
+                padding: 10px 0;
+                white-space: pre-line;
+                word-break: keep-all;
+            }
+        }
+
+        .registerBox {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+
+            .noticeInfo {
+                border-bottom: solid 1px #7F5539;
+
+                display: flex;
+                width: 100%;
+                height: 10%;
+                align-items: center;
+                justify-content: space-between;
+
+                margin-bottom: 10px;
+
+                >div {
+                    span {
+                        margin-right: 10px;
+                    }
+
+                    select {
+                        background: none;
+                        cursor: pointer;
+                    }
+                }
+
+                >div:first-child {
+                    min-width: 50%;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        padding: 0 5px;
+                        flex: 1;
+                        background: none;
+                    }
+                }
+            }
+
+            textarea {
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                resize: none;
+                background-color: #faf5f1;
+            }
+        }
+    }
+}

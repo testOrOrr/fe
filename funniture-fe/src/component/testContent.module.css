@@ -1,0 +1,17 @@
+.wholeContent {
+    width: 100%;
+    height: 100%;
+    border: solid 1px red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 0 10px;
+    }
+}

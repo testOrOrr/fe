@@ -1,0 +1,95 @@
+.wholeContent {
+    border: solid 2px #7F5539;
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    .noticeBox {
+        border: solid 2px #7F5539;
+        width: 100%;
+        flex: 1;
+        border-radius: 5px;
+
+        overflow: hidden;
+        padding: 10px;
+
+        .noticeItem {
+            cursor: pointer;
+            display: flex;
+            width: 100%;
+            border-bottom: solid 1px #7F5539;
+            padding: 5px 0;
+            font-size: 0.9em;
+
+            >div {
+                width: 15%;
+                text-align: center;
+            }
+
+            .noticeItemTitle {
+                width: 50%;
+            }
+
+            .noticeItemAt {
+                width: 20%;
+            }
+        }
+
+        .noticeTitle {
+            border-bottom: solid 1px #7F5539;
+            padding: 10px 0;
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+    }
+}
+
+.noticeDetailContainer {
+    border: solid 2px #7F5539;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    >div:first-child {
+        cursor: pointer;
+    }
+
+    .noticeInfoBox {
+        border-bottom: solid 1px #7F5539;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+
+
+        .noticeDetailTitle {
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+
+        span {
+            font-weight: 400;
+            margin-right: 10px;
+        }
+
+    }
+
+    .noticeContent {
+        border: solid 1px #7F5539;
+        width: 100%;
+        flex: 1;
+        padding: 10px;
+        white-space: pre-line;
+        border-radius: 10px;
+    }
+}

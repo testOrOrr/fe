@@ -1,0 +1,152 @@
+.wholeContainer {
+    width: 100%;
+    flex: 1;
+    margin: 3% 5%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    .orderPageTitle {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #7F5539;
+        margin-bottom: 4%;
+    }
+
+    .favoritesList {
+        width: 100%;
+        flex: 1;
+
+        .favoritesItem {
+            box-sizing: border-box;
+            display: flex;
+            padding: 10px;
+            border-bottom: solid 2px #B08968;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            min-height: 100px;
+            max-height: 160px;
+            margin: 10px 0;
+
+            .imageBox {
+                border: solid 2px #A5A3A3;
+                width: 17%;
+                aspect-ratio: 1/1;
+                box-sizing: border-box;
+                padding: 10px;
+                border-radius: 15px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .itemInfo {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: starts;
+                justify-content: space-between;
+                gap: 10px;
+
+                >div {
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+
+                    >div:first-child {
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        margin: 0 5px;
+                        font-weight: 700;
+                        font-size: 1.1em;
+                    }
+                }
+
+                >div:first-child {
+                    width: 50%;
+                    text-align: start;
+                }
+
+                .productStatusBox {
+                    align-items: center;
+                    justify-content: center;
+
+                    >div:first-child {
+                        margin-bottom: 0;
+                        color: white;
+                        background-color: #0675CF;
+                        border-radius: 30px;
+                        padding: 5px 15px;
+                        text-align: center;
+                        width: fit-content;
+                        max-width: 95%;
+                    }
+                }
+            }
+
+            .btnBox {
+                width: 15%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: centers;
+                gap: 20px;
+
+                button {
+                    padding: 5px 0;
+                    background: none;
+                }
+
+                button:first-child {
+                    border: solid 2px #B08968;
+                    border-radius: 10px;
+                    color: #B08968;
+                }
+
+                button:first-child:hover {
+                    background-color: #B08968;
+                    color: white;
+                }
+
+
+                button:last-child {
+                    border: solid 2px #A5A3A3;
+                    border-radius: 10px;
+                    color: #A5A3A3;
+                }
+
+                button:last-child:hover {
+                    background-color: #A5A3A3;
+                    color: white;
+                }
+            }
+        }
+
+        .noFavoriteMsg {
+            width: 100%;
+            height: calc(100% - 3em);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >div {
+                font-size: 2em;
+                font-weight: 700;
+            }
+        }
+    }
+}

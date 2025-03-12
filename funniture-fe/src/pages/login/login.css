@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.loginLayout{
+    background-color: #B08968;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginContainer{
+    width: 550px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.loginMainLogo {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.loginMainLogo img{
+    width: 300px;
+    height: 50px;
+}
+
+.loginInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* .loginInput input{
+    width: 300px;
+    height:50px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+} */
+
+.loginInput input {
+    width: 300px; /* 고정 너비 */
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* 패딩과 보더를 포함한 크기 계산 */
+    overflow: hidden; /* 텍스트가 넘칠 경우 숨김 */
+}
+
+
+.loginBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: #D9D9D9;
+    /* 이메일 , 비밀번호 다 입력 했을 때 바뀔 색상 #898888 */
+    border-radius: 5px;
+}
+
+.loginBtn.enabled {
+    background-color: #B08968; /* 활성화 색상 */
+}
+
+.loginBtn button:disabled {
+    cursor: not-allowed; /* 비활성화 시 커서 변경 */
+}
+
+.loginBtn button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    gap: 40px; /* 입력 필드와 버튼 간격 */
+    width: 100%;
+}
+
+.additionalOptions{
+    display: flex;
+    font-size: 15px;
+    gap: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 소셜 로그인 영역 */
+.socialLogin {
+    margin-top: 30px; /* 위 요소와 간격 추가 */
+}
+
+.socialLogin label {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.socialButtons {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* 버튼 간격 조정 */
+}
+
+.socialButton {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 10%; 
+    border: none; 
+}
+
+.socialButton.naver {
+    background-color: #03C75A; /* 네이버 색상 */
+    color: white;
+    font-weight: bold;
+}
+
+.socialButton.google {
+    background-color: #D9D9D9; /* 구글 색상 */
+    color: white;
+    font-weight: bold;
+}

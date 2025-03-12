@@ -1,0 +1,296 @@
+.wholeContainer {
+    width: 100%;
+
+    padding: 0 17% 20px 17% !important;
+
+    >div {
+        width: 100%;
+    }
+
+    .summaryInfoBox {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3%;
+
+
+        .imgBox {
+            border: solid 2px #8a8a8a;
+            width: 48%;
+            padding: 30px;
+            min-height: 40vh;
+            max-height: 47.5vh;
+
+            box-sizing: border-box;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 70%;
+                max-height: 90%;
+            }
+        }
+
+        .summaryInfo {
+            width: 49%;
+            background-color: #EDE9E9;
+            border-radius: 20px;
+            padding: 10px 15px;
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+
+            .productNoBox {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                margin-bottom: 10px;
+
+                div {
+                    color: #7F5539;
+                    font-weight: 200;
+                    padding: 0 5px;
+                }
+
+                div:first-child {
+                    border-right: solid 1px #7F5539;
+                }
+            }
+
+            .productNameBox {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: solid 2px black;
+                padding: 0 5px 5px;
+
+                >div {
+                    font-size: 1.5em;
+                    display: flex;
+
+                    >div {
+                        height: 1.2em;
+                        aspect-ratio: 1/1;
+                        font-size: 0.8em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 10px;
+                    }
+                }
+
+            }
+
+            .categoryInfoBox {
+                display: flex;
+                flex-direction: column;
+                padding: 5px 10px;
+
+                >div {
+                    display: flex;
+                    align-items: center;
+
+                    >div:first-child {
+                        color: #7F5539;
+                        margin-right: 10px;
+                    }
+
+                    >div:last-child {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+
+            .priceBox {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 5px;
+
+                border-top: solid 1.5px #8a8a8a;
+                border-bottom: solid 1.5px #8a8a8a;
+
+                >div {
+                    display: flex;
+                    align-items: center;
+
+                    >div:first-child {
+                        font-weight: 700;
+                        margin-right: 10px;
+                        font-size: 1.3em;
+                    }
+
+                    div {
+                        font-size: 1.1em;
+
+                        span {
+                            font-size: 0.9em;
+                            margin: 0px 3px
+                        }
+                    }
+                }
+
+                >div:last-child {
+                    color: #D85057;
+                }
+
+            }
+
+            .rentalCondition {
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+
+                >div {
+                    display: flex;
+                    flex-direction: column;
+
+                    >div:first-child {
+                        font-size: 0.8em;
+                        color: #7F5539;
+                        margin-bottom: 5px;
+                    }
+
+                    >div {
+                        input[type="radio"] {
+                            display: none;
+                        }
+
+                        label {
+                            text-align: center;
+                            background-color: white;
+                            border: solid 1px #aaa8a8;
+                            color: #aaa8a8;
+                            padding: 5px 10px;
+                            box-sizing: border-box;
+                            border-radius: 20px;
+                            margin-right: 10px;
+                        }
+
+                        input[type="radio"]:checked+label {
+                            color: #7F5539;
+                            border-color: #7F5539;
+                        }
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+
+                        input {
+                            width: 15%;
+                            padding: 5px 10px;
+                            border-radius: 30px;
+                            border: solid 2px #7F5539;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                >div:first-child {
+                    margin-bottom: 5px;
+                }
+            }
+
+            >div:last-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+
+                button {
+                    padding: 8px 20px;
+                    background-color: #7F5539;
+                    color: white;
+                    border-radius: 15px;
+                    border: none;
+                    font-weight: 700;
+                    font-size: 1.1em;
+                }
+
+                button:disabled {
+                    background-color: #8a8a8a;
+                }
+            }
+        }
+
+    }
+
+    .tabsBox {
+        display: flex;
+        border: solid 1px black;
+        background-color: #B08968;
+
+        >input {
+            display: none;
+        }
+
+        label {
+            padding: 10px 0;
+            flex: 1;
+            border-right: solid 1px black;
+            color: white;
+            text-align: center;
+        }
+
+        label:last-child {
+            border: none;
+        }
+
+        input[type="radio"]:checked+label {
+            background-color: #7F5539;
+        }
+    }
+
+    .ownerInfo {
+        width: 100%;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+
+            th {
+                width: 100%;
+                border: solid 1px #8a8a8a;
+                padding: 10px;
+                text-align: center;
+            }
+
+            tbody {
+                tr {
+                    width: 100%;
+                    display: flex;
+
+
+                    td {
+                        border: solid 1px #8a8a8a;
+                        flex: 1;
+                        display: flex;
+                        padding: 10px;
+                    }
+
+                    .descriptionTitle {
+                        font-weight: 700;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .productDetailInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        /* border: solid 1px #7F5539; */
+        padding: 10px 10px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

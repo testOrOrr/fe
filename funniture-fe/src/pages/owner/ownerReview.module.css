@@ -1,0 +1,120 @@
+.wholeContainer {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #7F5539;
+    border-radius: 10px;
+}
+
+.paginationWrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* 테이블 레이아웃을 고정 */
+}
+
+.table th,
+.table td {
+    border: 1px solid #A8a8a8;
+    padding: 10px;
+    text-align: center;
+    word-break: keep-all;
+    /* 단어를 그대로 유지 */
+}
+
+.table th {
+    background-color: #f0f0f0;
+}
+
+/* 각 열의 너비를 지정 */
+.table th:nth-child(1) {
+    width: 10%;
+}
+
+.table th:nth-child(2) {
+    width: 10%;
+}
+
+.table th:nth-child(3) {
+    width: 10%;
+}
+
+.table th:nth-child(4) {
+    width: 10%;
+}
+
+.table th:nth-child(5) {
+    width: 10%;
+}
+
+.table th:nth-child(6) {
+    width: 15%;
+}
+
+.table th:nth-child(7) {
+    width: 25%;
+}
+
+/* 리뷰 내용 열 너비 */
+.table th:nth-child(8) {
+    width: 10%;
+}
+
+/* tbody의 td도 동일한 너비로 설정 */
+.table td:nth-child(1) {
+    width: 10%;
+}
+
+.table td:nth-child(2) {
+    width: 10%;
+}
+
+.table td:nth-child(3) {
+    width: 10%;
+}
+
+.table td:nth-child(4) {
+    width: 10%;
+}
+
+.table td:nth-child(5) {
+    width: 10%;
+}
+
+.table td:nth-child(6) {
+    width: 15%;
+}
+
+.table td:nth-child(7) {
+    width: 25%;
+}
+
+/* 리뷰 내용 열 너비 */
+.table td:nth-child(8) {
+    width: 10%;
+}
+
+/* 리뷰 내용이 길 경우 세로로만 확장 */
+.table td:nth-child(7) {
+    word-wrap: break-word;
+    /* 단어를 줄바꿈 */
+    height: auto;
+    /* 높이 자동으로 조정 */
+    vertical-align: top;
+    /* 세로 정렬 */
+}

@@ -1,0 +1,236 @@
+.returnContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 3% 5%;
+    box-sizing: border-box;
+}
+
+.returnContainer > h3 {
+    display: flex;
+    color: #7F5539;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.orderHr {
+    width: 99.8%;
+    margin: 0;
+}
+
+/* 주문번호&주문일 */
+.orderHeader {
+    border: 2px solid #7F5539;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 7px;
+    margin: 2px 0px;
+}
+.orderHeader > div {
+    display: flex;
+}
+.orderHeader > div > div:first-child {
+    color: #7F5539;
+    margin-right: 5px;
+}
+.orderHeader > div > div {
+    font-weight: 600;
+}
+.orderHeader > div:first-child {
+    color: gray;
+    font-size: 0.8em;
+}
+
+
+/* 주문상품 */
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.productInfo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.productInfo > div:first-child {
+    margin: 7px 20px;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    width: 50%;
+    gap: 10px;
+}
+.productInfo> div:nth-child(1) > div:nth-child(1)  {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #2C7E3E;
+}
+.productInfo > div > div:nth-child(2),
+.productInfo > div:nth-child(2)> div {
+    align-items: center;
+    background-color: #B08968;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white;
+    cursor: pointer;
+}
+.productInfo > div:nth-child(2) {
+    margin: 7px 20px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.orderInfoContainer {
+    margin: 7px 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100%-20px);
+    height: calc(100%-7px);
+}
+
+.orderInfoContainer > div:nth-child(1) {
+    display: flex;
+    font-size: 1.3em;
+    font-weight: 600;
+} 
+
+.orderInfoContainer > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.orderInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.orderImg {
+    width: 100px;
+    height: 100px;
+}
+
+.orderInfo > div {
+    margin: 2px 0px;
+    width: 100%;
+    display: flex;  /* 내부 요소도 flex 적용 */
+    flex-direction: row; /* 가로 정렬 */
+    
+}
+
+.orderInfoContainer > div:nth-child(3) {
+    display: flex;
+    background-color: rgb(230, 226, 226);
+    margin: 0% 20% 0% 0%;
+    padding: 0.5%;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 0.9em;
+} 
+
+.orderInfoContainer > div:nth-child(3) > div:nth-child(1) {
+    background-color: white;
+    color: rgb(90, 88, 88);
+    border: 1px solid rgb(90, 88, 88);
+    margin: 0% 2%;
+    padding: 1px 8px;
+} 
+
+/* 배송지 */
+.deliveryContainer {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 1% 2.5%;
+}
+
+.deliveryContainer > div:nth-child(1) {
+    display: flex;
+}
+
+.deliveryContainer > div:nth-child(1) > div:nth-child(1) {
+    display: flex;
+    flex: 1;
+    font-size: 1.3em;
+}
+.deliveryContainer > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    width: fit-content;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #B08968;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white; 
+}
+
+.deliveryContainer > div:nth-child(2) {
+    display: flex;
+    margin: 2px 0px;
+}
+
+.deliveryContainer > div:nth-child(3) {
+    display: flex;
+    font-size: 1.1em;
+}
+
+.deliveryContainer > div:nth-child(4) {
+    margin: 1% 0%;
+    display: flex;
+    gap: 1%;
+}
+
+.deliveryContainer > div:nth-child(4) > select {
+    padding: 3px;
+    width: 50%;
+    border: 2px solid #7F5539;
+    border-radius: 5px;
+}
+
+.deliveryContainer > div:nth-child(4) > div {
+    align-items: center;
+    background-color: #B08968;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white; 
+}
+
+.deliveryContainer > div:nth-child(5) > div {
+    display: flex;
+    margin-top: -10px;
+    font-size: 0.95em;
+}
+
+.returnButtonContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.returnButtonContainer > div {
+    display: flex;
+    font-size: 1.5em;
+    background-color: #B08968;
+    padding: 8px 25px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.returnButtonContainer > div:hover {
+    background-color: #7F5539;
+}

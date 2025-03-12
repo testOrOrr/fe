@@ -1,0 +1,41 @@
+.scrollableContainer {
+    max-height: 500px; /* 원하는 높이로 조정 가능 */
+    overflow-y: auto;
+    border: 1px solid #eee;
+}
+
+.inquiryList {
+    display: flex;
+    flex-direction: column;
+}
+
+.inquiryItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: small;
+    width: 100%; /* 또는 원하는 픽셀 값으로 설정 */
+}
+
+.inquiryItem span {
+    text-align: center;
+}
+
+.answerButton {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* asd? */
+.divItem {
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 2px #7F5539;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}

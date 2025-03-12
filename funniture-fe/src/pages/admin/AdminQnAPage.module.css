@@ -1,0 +1,33 @@
+.wholeContainer {
+    height: calc(100% - 25px - 1.8em);
+    /* margin-top: 1%; */
+
+    display: flex;
+    flex-direction: column;
+
+    .radioBox {
+        width: fit-content;
+        margin-bottom: 5px;
+
+        input {
+            display: none;
+        }
+
+        input[type='radio']:checked+label {
+            color: #7F5539;
+        }
+
+        label {
+            margin-right: 10px;
+            font-weight: 700;
+            color: #a8a8a8;
+            cursor: pointer;
+        }
+    }
+
+    .contentContainer {
+        width: 100%;
+        height: 100%;
+        max-height: calc(100% - 1.8em);
+    }
+}

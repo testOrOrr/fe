@@ -1,0 +1,185 @@
+@import url(../font.css);
+
+.layout {
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Paperlogy';
+
+    /* 메인 페이지 */
+    .bannerImg {
+        width: 100%;
+        height: 370px;
+        margin-bottom: 10px;
+        margin-top: 1.5%;
+    }
+
+    .categoryBtns {
+        background-color: #D7C3B3;
+        width: 100%;
+        height: max-content;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 40px;
+        padding: 50px 20%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        >div {
+            background-color: white;
+            /* max-width: 290px; */
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            box-sizing: border-box;
+
+            padding: 10px 0;
+
+            .allProduct {
+                margin: 0;
+                font-weight: bold;
+                font-size: 1.5em;
+                color: #7F5539;
+            }
+
+            >div {
+                font-size: 1.3em;
+                margin-bottom: 10px;
+            }
+
+            img {
+                max-width: 70%;
+                max-height: 110px;
+            }
+        }
+    }
+
+    /* 검색 리스트 페이지 */
+
+    .searchConditionBox {
+        margin-top: 1.5%;
+        padding: 10px 10%;
+
+        background-color: #F4F4F4;
+
+        box-sizing: border-box;
+
+        hr {
+            border: solid 5px white;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .clearConditions {
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #615F5F;
+            color: white;
+            cursor: pointer;
+        }
+
+        .companyList {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            >div:first-child {
+                display: flex;
+                flex: 1;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .companyItem {
+                border: solid 1px #A5A3A3;
+                background-color: white;
+                padding: 10px 15px;
+                border-radius: 30px;
+                width: fit-content;
+
+                color: #A5A3A3;
+
+                cursor: pointer;
+            }
+
+            .selectedCompany {
+                background-color: #615F5F;
+                border-color: #615F5F;
+                color: white;
+            }
+        }
+
+        .categoryList {
+            display: flex;
+            gap: 10px;
+
+            .categoryItem {
+                border: solid 1px #A5A3A3;
+                background-color: white;
+                padding: 10px 15px;
+                border-radius: 30px;
+
+                color: #A5A3A3;
+                cursor: pointer;
+            }
+
+            .selectedCategory {
+                background-color: #615F5F;
+                border-color: #615F5F;
+                color: white;
+            }
+        }
+    }
+
+}
+
+.mainContent {
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    >div {
+        padding: 0 10% 20px 10%;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width:1550px) {
+    .layout {
+        .bannerImg {
+            height: 280px;
+        }
+
+        .categoryBtns {
+            padding: 40px 15%;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .layout {
+        .bannerImg {
+            height: 250px;
+        }
+
+        .categoryBtns {
+            padding: 50px 5%;
+        }
+    }
+}

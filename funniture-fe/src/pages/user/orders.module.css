@@ -1,0 +1,237 @@
+/* mypageContent 내부에 전체적인 margin 을 주기위한 컨테이너 */
+.ordersContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 3% 5%;
+    box-sizing: border-box;
+}
+
+/* 타이틀 => 주문/배송 */
+.orderPageTitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #7F5539;
+}
+
+/* 개월수선택 Box => 주문일로 필터링  */
+.rentalPeriodSelector {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rentalPeriodSelector>div:nth-child(1),
+.rentalPeriodSelector>div:nth-child(2),
+.rentalPeriodSelector>div:nth-child(3) {
+    border-radius: 20px;
+    padding: 0.5% 1.8%;
+    margin-left: 1%;
+    background-color: #B08968;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 선택된 기간  */
+.rentalPeriodSelector>div.selected {
+    background-color: #7F5539;
+    /* 선택된 항목 강조 색상 */
+    font-weight: bold;
+}
+
+/* 날짜 선택 */
+.selectedDateContainer {
+    display: flex;
+    width: 155px;
+    position: relative;
+    /* 아이콘을 더 잘 위치시키기 위한 부모 요소 설정 */
+    border-radius: 20px;
+    padding: 0.5% 1.8%;
+    margin-left: 1%;
+    background-color: #7F5539;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.dateContainer {
+    display: flex;
+    width: 155px;
+    position: relative;
+    /* 아이콘을 더 잘 위치시키기 위한 부모 요소 설정 */
+    border-radius: 20px;
+    padding: 0.5% 1.8%;
+    margin-left: 1%;
+    background-color: #B08968;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.selectedDateContainer>input[type="date"],
+.dateContainer>input[type="date"] {
+    color: white;
+    -moz-appearance: none;
+    /* Firefox */
+    appearance: none;
+    /* Standard syntax */
+    border: none;
+    /* 기본 테두리 제거 */
+    background: none;
+    /* 배경 제거 */
+    font: inherit;
+    /* 기본 폰트 스타일 제거 */
+    outline: none;
+    /* 포커스 시 기본 윤곽선 제거 */
+    width: 100%;
+    /* 날짜 입력 필드가 부모 요소를 꽉 채움 */
+}
+
+/* 기본 날짜 아이콘 스타일 조정 */
+.selectedDateContainer>input[type="date"]::-webkit-calendar-picker-indicator {
+    padding-right: 0px;
+    /* 기본 아이콘과 날짜 입력 사이의 간격을 줄임 */
+    cursor: pointer;
+}
+
+
+
+/* 주문리스트 컨테이너 */
+.orderListContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.orderListContainer>div>p {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.orderListItem {
+    border: solid 2px #B08968;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 5%;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+/* 주문 리스트 */
+.statusAndProductImgBox {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+.status {
+    height: 20%;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: rgb(58, 56, 56);
+}
+
+.productImg {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: solid 1.5px rgb(122, 119, 119);
+}
+
+.productImg img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1 /1;
+}
+
+
+/* 주문 정보 */
+.ordersInfo {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.ordersInfo>div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+}
+
+.ordersInfo>div:first-child {
+    background-color: rgb(223, 219, 219);
+    width: fit-content;
+    border-radius: 5px;
+    color: black;
+    padding: 0.5% 1%;
+}
+
+.ordersInfo>div:nth-child(2) {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.ordersInfo>div:nth-child(4) {
+    font-weight: 600;
+}
+
+.link {
+    color: green;
+    text-decoration: none;
+}
+
+/* 문의 버튼 */
+.inquiryButton {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    font-size: 1.2em;
+    color: white;
+}
+
+.inquiryButton>div {
+    margin-top: 55%;
+    margin-left: 40%;
+    display: flex;
+    width: 100px;
+    height: 20%;
+    /* padding: 0% 10%; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 0.8em;
+    background-color: #B08968;
+    cursor: pointer;
+}
+
+.pagingContainer {
+    width: 100%;
+    height: 10%;
+
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        >div {
+
+            margin: 25px 0px 0px 0px;
+            height: fit-content;
+        }
+    }
+}

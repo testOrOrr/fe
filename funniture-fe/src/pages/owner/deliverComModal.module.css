@@ -1,0 +1,69 @@
+.deliverContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.deliverHr {
+    margin: 0px 0px 20px 0px;
+}
+
+
+.deliverContainer > div:nth-child(1),
+.rentalContext {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    font-weight: 600;
+}
+
+.rentalContext {
+    padding: 2%;
+}
+
+.rentalContext > div {
+    margin-bottom: 10px;
+}
+
+.rentalContext > div:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.rentalContext > div:nth-child(3) > input {
+    margin-left: 5px;
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: #7F5539;
+    padding-left: 5px;
+}
+
+.rentalContext > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+
+}
+
+.rentalContext > div > select {
+    margin-left: 5px;
+    width: 150px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: #7F5539;
+}
+
+.deliverContainer > div > button {
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 20px;
+    background-color: #B08968;
+    color: white;
+}
+
+.deliverContainer > div > button:hover {
+    background-color: #7F5539;
+}

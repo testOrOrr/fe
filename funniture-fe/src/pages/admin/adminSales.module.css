@@ -1,0 +1,205 @@
+.adminSaleContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.adminSearchContainer {
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+    border: 1px solid #7F5539;
+    border-radius: 10px;
+    padding: 1%;
+
+    .monthSearchContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color: white;
+    }
+
+    .monthSearchContainer>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+    }
+
+    .monthSearchContainer>div:nth-child(1) {
+        background-color: #B08968;
+        border: 1px solid rgb(105, 104, 104);
+    }
+
+    .monthSearchContainer>div:nth-child(2) {
+
+        border: 1px solid rgb(105, 104, 104);
+        border-left: none;
+
+    }
+
+    .storeSearchContainer {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .storeSearchContainer>div:nth-child(1) {
+        width: 8%;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #B08968;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .storeSearchContainer>div:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+        /* 줄 바꿈 추가 */
+        width: 92%;
+        height: 80px;
+        max-height: 80px;
+        overflow-y: auto;
+    }
+
+    .storeSearchContainer>div:nth-child(2)>div {
+        display: flex;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        min-width: fit-content;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .selectedStore {
+        color: #7F5539;
+        font-weight: 600;
+    }
+
+}
+
+.totalAmountContainer {
+    border: 1px solid #7F5539;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 10%;
+    padding: 1%;
+
+    >div:nth-child(1) {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    >div:nth-child(2) {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        font-size: 1.3em;
+        gap: 30px;
+        font-weight: 600;
+    }
+
+    >div:nth-child(2)>div {
+        margin-right: 20px;
+    }
+
+
+
+}
+
+.salesItemContainer {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid #7F5539;
+    position: relative;
+    /* 부모 요소에 필요 */
+
+
+    .salesSubContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 97%;
+        height: 90%;
+        margin: 1%;
+        overflow: hidden;
+    }
+
+    .title>div>p,
+    .salesItem>div>p {
+        margin: 0;
+    }
+
+    .title {
+        display: flex;
+        width: 100%;
+        height: 45px;
+        max-height: 45px;
+        border-bottom: 1px solid #7F5539;
+        padding-right: 8px;
+    }
+
+    .title>div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .salesItems {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 10px;
+    }
+
+    .salesItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45px;
+        max-height: 45px;
+        border: 1px solid #7F5539;
+        border-radius: 10px;
+
+        /* display: none; */
+    }
+
+    .title>div,
+    .salesItem>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+    }
+
+    .pagingContainer {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        width: 97%;
+        align-items: center;
+        height: 50px;
+        height: 60px;
+    }
+
+    .noResultsMessage {
+        display: flex;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 1.5em;
+    }
+}

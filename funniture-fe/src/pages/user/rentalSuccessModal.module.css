@@ -1,0 +1,91 @@
+.successModalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0% 10%;
+    height: 250px;  
+}
+
+.successTitle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.successStatusContainer {
+    margin: 25px 0px 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.successHr1 {
+    border: 0;
+    border-top: 4px solid #7F5539; /* 선의 두께와 색상 */
+    width: 115px;
+    opacity: 1;
+}
+
+.successHr2 {
+    border: 2px solid #49433f;
+    width: 115px;
+}
+
+.successStatusContainer > div:nth-child(1) {
+    border: 3px solid #7F5539;
+    border-radius: 50%;
+    width: 22px;
+    aspect-ratio: 1 / 1;
+}
+
+.successStatusContainer > div:nth-child(5) {
+    background-color: rgb(196, 191, 191);
+    border-radius: 50%;
+    width: 22px;
+    aspect-ratio: 1 / 1;
+}
+
+.successStatusContainer > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    color: white;
+    background-color:#7F5539;
+    border-radius: 50%;
+    width: 35px;
+    aspect-ratio: 1 / 1;
+}
+
+.successStatusContext {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+}
+
+.successStatusContext > div:nth-child(1),
+.successStatusContext > div:nth-child(2) {
+    color: #7F5539;
+    font-weight: 600;
+}
+
+.successStatusContext > div:nth-child(3) {
+    color: gray;
+}
+
+.successContext {
+    padding: 10px 0px;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(207, 202, 202);
+}
+
+.successContext > div > span {
+    color: #7F5539;
+    font-weight: 600;
+}
